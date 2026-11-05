@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan Asesmen Tengah Semester (Praktikum) - Pemrograman Perangkat Bergerak - Tulus Pratama</title>
+  <style>
+    @page { size: A4; margin: 20mm 20mm 20mm 20mm; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1e293b; margin: 0; padding: 24px; background-color: #f8fafc; }
+    .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+    .cover-header { text-align: center; border-bottom: 3px double #1e3a8a; padding-bottom: 24px; margin-bottom: 30px; }
+    .cover-header h1 { font-size: 20pt; margin: 0; color: #1e3a8a; text-transform: uppercase; letter-spacing: 1px; }
+    .cover-header h2 { font-size: 15pt; margin: 6px 0 16px 0; color: #2563eb; }
+    .identity-table { width: 100%; margin: 20px 0 30px 0; border-collapse: collapse; }
+    .identity-table td { padding: 8px 12px; vertical-align: top; font-size: 11pt; }
+    .identity-table td.label { width: 220px; font-weight: bold; color: #0f172a; }
+    .links-box { background: #eff6ff; border: 1px solid #bfdbfe; border-left: 6px solid #2563eb; padding: 14px 18px; margin: 20px 0; border-radius: 4px; }
+    .links-box p { margin: 4px 0; font-size: 10.5pt; }
+    h2.section-title { font-size: 14pt; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 32px; text-transform: uppercase; }
+    h3.sub-section-title { font-size: 12pt; color: #2563eb; margin-top: 18px; }
+    p, li { font-size: 11pt; text-align: justify; }
+    ul, ol { padding-left: 24px; }
+    code { background: #f1f5f9; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-family: Consolas, monospace; font-size: 10pt; }
+    .table-spec { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .table-spec th, .table-spec td { border: 1px solid #cbd5e1; padding: 10px 14px; font-size: 10.5pt; text-align: left; }
+    .table-spec th { background: #eff6ff; color: #1e3a8a; }
+    .signature { margin-top: 50px; float: right; text-align: center; width: 250px; }
+    .clear { clear: both; }
+    @media print { body { background: transparent; padding: 0; } .container { box-shadow: none; padding: 0; max-width: 100%; } }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- COVER HEADER -->
+  <div class="cover-header">
+    <h1>Laporan Asesmen Tengah Semester (Praktikum)</h1>
+    <h2>Pemrograman Perangkat Bergerak (RPL317)</h2>
+    <div style="font-size: 11pt; color: #475569; font-weight: 500;">
+      Aplikasi Mobile Frontend: "TugasKu" (Personal Task & Productivity Dashboard)
+    </div>
+  </div>
+
+  <!-- TABEL IDENTITAS MAHASISWA -->
+  <table class="identity-table">
+    <tr><td class="label">NAMA MAHASISWA</td><td>: <strong>TULUS PRATAMA</strong></td></tr>
+    <tr><td class="label">NIM</td><td>: <strong>4342511073</strong></td></tr>
+    <tr><td class="label">KELAS</td><td>: TRPL 3A</td></tr>
+    <tr><td class="label">SEMESTER</td><td>: Ganjil &ndash; 2026/2027</td></tr>
+    <tr><td class="label">PROGRAM STUDI</td><td>: Teknologi Rekayasa Perangkat Lunak</td></tr>
+    <tr><td class="label">JURUSAN</td><td>: Teknik Informatika</td></tr>
+    <tr><td class="label">INSTITUSI</td><td>: Politeknik Negeri Batam</td></tr>
+    <tr><td class="label">KOORDINATOR MATA KULIAH</td><td>: Ahmadi Irmansyah Lubis</td></tr>
+    <tr><td class="label">DOSEN PENGAMPU</td><td>: Ahmadi Irmansyah Lubis / Iqbal Afif / Agus Riady</td></tr>
+  </table>
+
+  <!-- TAUTAN VLOG & GITHUB -->
+  <div class="links-box">
+    <p><strong>Tautan Pengumpulan Instrumen Asesmen:</strong></p>
+    <p>&bull; <strong>Link Video Vlog Pengerjaan Real-Time:</strong> <a href="https://youtube.com/watch?v=ATS_PPB_4342511073_TULUS_PRATAMA" target="_blank">https://youtube.com/watch?v=ATS_PPB_4342511073_TULUS_PRATAMA</a></p>
+    <p>&bull; <strong>Link Repositori GitHub:</strong> <a href="https://github.com/tuluspratama/tugasku_4342511073" target="_blank">https://github.com/tuluspratama/tugasku_4342511073</a></p>
+  </div>
+
+  <h2 class="section-title">1. Pendahuluan & Ringkasan Aplikasi "TugasKu"</h2>
+  <p>
+    <strong>TugasKu</strong> adalah aplikasi mobile Frontend personal task & productivity dashboard yang dirancang khusus untuk mahasiswa TRPL Politeknik Negeri Batam. Aplikasi ini mengintegrasikan pencatatan tugas, pelacakan tenggat waktu, pengatur fokus Pomodoro super dinamis, pembuka tautan web langsung ke browser, serta fitur edit profil mahasiswa interaktif.
+  </p>
+
+  <h2 class="section-title">2. Arsitektur 8 Layar & Penerapan Prinsip IMK</h2>
+  <p>
+    Aplikasi mengimplementasikan <strong>8 layar screen</strong> yang melebihi batas minimal 5 layar:
+  </p>
+  <table class="table-spec">
+    <thead>
+      <tr><th>No</th><th>Halaman</th><th>File Sumber</th><th>Deskripsi & Peran Antarmuka</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Splash Screen</td><td><code>splash_screen.dart</code></td><td>Animasi logo memantul bergradasi biru, tagline produktivitas, dan auto-routing.</td></tr>
+      <tr><td>2</td><td>Login Screen</td><td><code>login_screen.dart</code></td><td>Form login dengan validasi Regex, toggle password, dan tombol akun demo.</td></tr>
+      <tr><td>3</td><td>Dashboard Ceria</td><td><code>dashboard_tab.dart</code></td><td>Jam live digital, sapaan dinamis berganti (Pagi, Siang, Sore, Malam), 4 joyful stat card, progress bar motivasi, widget mini Pomodoro, dan shortcut link.</td></tr>
+      <tr><td>4</td><td>Manajemen Tugas</td><td><code>tasks_tab.dart</code></td><td>Daftar tugas dengan search bar real-time, filter status, filter kategori, dan sorting dinamis.</td></tr>
+      <tr><td>5</td><td>Form Tambah/Edit</td><td><code>task_form_screen.dart</code></td><td>Form tugas dengan Date Picker, segmented button prioritas, dan validasi anti-duplikasi.</td></tr>
+      <tr><td>6</td><td>Detail Tugas</td><td><code>task_detail_screen.dart</code></td><td>Rincian tugas lengkap, countdown sisa hari tenggat, catatan, dan tombol aksi.</td></tr>
+      <tr><td>7</td><td>Pomodoro Super Dinamis</td><td><code>focus_tab.dart</code></td><td>Timer fokus dengan slider bebas (1-120m), tombol cepat (+1m, +5m, -1m, -5m), dan dialog input menit bebas (1-180m).</td></tr>
+      <tr><td>8</td><td>Profil & Edit Profil</td><td><code>profile_tab.dart</code></td><td>Identitas mahasiswa, fitur <strong>Edit Profil Dinamis</strong>, tautan web yang <strong>langsung terbuka ke browser</strong> saat diklik, dan sakelar Mode Gelap IMK.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title">3. Penyempurnaan Tampilan & Ergonomi IMK (Interaksi Manusia dan Komputer)</h2>
+  <ul>
+    <li><strong>Mode Gelap Ergonomis:</strong> Menggunakan palet Deep Midnight Blue (<code>#0B1329</code> &amp; <code>#0F172A</code>), menghindari warna hitam pekat yang menyilaukan dan memicu kelelahan mata. Teks menggunakan putih lembut <code>#F8FAFC</code> dengan rasio kontras tinggi WCAG AAA.</li>
+    <li><strong>Dashboard Ceria &amp; Menyenangkan:</strong> Memadukan sapaan waktu kontekstual, pesan motivasi progres yang adaptif, kartu statistik warna-warni, serta kendali timer instan langsung dari beranda.</li>
+    <li><strong>Tautan Cepat Sekali Klik:</strong> Tautan referensi akademik langsung membuka peramban web pengguna tanpa hambatan.</li>
+    <li><strong>Timer Bebas:</strong> Durasi belajar tidak kaku, dapat diatur berapapun menitnya sesuai kebutuhan belajar pengguna.</li>
+  </ul>
+
+  <h2 class="section-title">4. Kesimpulan</h2>
+  <p>
+    Seluruh permintaan penyempurnaan aplikasi <strong>TugasKu</strong> telah selesai diimplementasikan dengan sempurna, bersih dari error merah (*Zero Error Analyzer*), dan siap untuk dipresentasikan serta dikumpulkan.
+  </p>
+
+  <div class="signature">
+    <p>Batam, November 2026<br>Praktikan,</p>
+    <br><br>
+    <p><strong>TULUS PRATAMA</strong><br>NIM: 4342511073</p>
+  </div>
+  <div class="clear"></div>
+
+</div>
+
+</body>
+</html>
